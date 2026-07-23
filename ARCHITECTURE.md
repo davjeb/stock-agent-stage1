@@ -14,7 +14,6 @@ Plain-English map of how this project works.
 | `input.md` | Your question. Edit this to change what gets analyzed. |
 | `report.md` | The output. Created or overwritten each time you run the program. |
 | `.env` | Your secret API keys (not shared in git). |
-| `.env.example` | Template showing what `.env` should look like. |
 | `requirements.txt` | List of Python packages to install. |
 | `.gitignore` | Tells git which files to skip (`.env`, virtualenv, cache files). |
 | `.venv/` | Your local Python environment (packages installed here). Not part of the logic. |
@@ -142,7 +141,7 @@ client.chat.completions.create(...)
 | Change where input is read from | `INPUT_FILE` in `main.py` |
 | Change where output is saved | `OUTPUT_FILE` in `main.py` |
 | Add or update Python packages | `requirements.txt` |
-| Set up your API keys | Copy `.env.example` → `.env`, add your keys |
+| Set up your API keys | Create `.env` with `OPENAI_API_KEY` and `TAVILY_API_KEY` |
 
 **Most common edit:** change `input.md` only.
 
